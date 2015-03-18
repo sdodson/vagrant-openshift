@@ -46,6 +46,10 @@ module Vagrant
             o.on("-r", "--replace", "Delete existing cloned dirs first. Default is to skip repos that are already cloned.") do |f|
               options[:replace] = f
             end
+
+            o.on("-o", "--osrepo", String, "Define origin repo if it's other than openshift/origin") do |f|
+              options[:osrepo] = f
+            end
           end
 
           # Parse the options

@@ -157,7 +157,7 @@ rm -rf #{repo_path}
 
         command += %{
 cloned=false
-echo 'Cloning #{repo} ...'
+echo 'Cloning #{repo} from #{url}...'
 }
 
         if @options[:user]
